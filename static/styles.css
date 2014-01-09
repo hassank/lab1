@@ -1,0 +1,283 @@
+#header{
+    position: absolute;
+    z-index: 2000;
+    width: 235px;
+    top: 2%;
+}
+#header h1{
+    font-size: 25px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #DFE2DB;
+    text-shadow: 0px 1px 1px rgba(0,0,0,0.3);
+    padding: 10px;
+    background: #000;
+}
+
+#navigation {
+    width: 235px;
+    display:block;
+    margin-left: -40px;
+    list-style:none;
+}
+#navigation a{
+    color: #444;
+    display: block;
+    background: #fff;
+    background: rgba(255,255,255,0.9);
+    line-height: 50px;
+	text-align: center;
+	text-transform: uppercase;
+    margin-bottom: 6px;
+    box-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+    font-size: 16px;
+}
+#navigation a:hover {
+    background: #ddd;
+}
+
+.panel{
+    width: 99%;
+    height: 98%;
+    overflow-y: auto;
+    overflow-x: hidden;
+    margin-top: -150%;
+    position: absolute;
+    background: #000;
+    box-shadow: 0px 4px 7px rgba(0,0,0,0.6);
+    z-index: 2;
+    -webkit-transition: all 1.5s ease-in-out;
+    -moz-transition: all 1.5s ease-in-out;
+    -o-transition: all 1.5s ease-in-out;
+    transition: all 1.5s ease-in-out;
+}
+.panel:target{
+    margin-top: 0%;
+    background-color: #FF6600;
+}
+
+.content{
+    right: 40px;
+    left: 280px;
+    top: 1%;
+    position: absolute;
+    height: 98%;
+}
+.content h2{
+	text-align: center;
+    font-size: 70px;
+    padding: 5px 0px 5px 0px;
+    margin-top: 10px;
+    color: #2B2B2B;
+    text-shadow: 0px 1px 1px rgba(0,0,0,1);
+}
+.content p{
+	text-align: center;
+    font-size: 18px;
+    padding: 10px;
+    line-height: 24px;
+    color: white;
+    display: inline-block;
+    background: black;
+    padding: 10px;
+    margin: 3px 0px;
+}
+
+.sub_title {
+	width: 100%;
+	position: absolute; 
+	top: 15%;
+	text-align: center;
+    font-size: 26px;
+    color: #2B2B2B;
+    text-shadow: 0px 1px 1px rgba(0,0,0,1);
+}
+
+.course_image_bar {
+	position: absolute;
+}
+
+.course_image_bar th {
+    font-size: 18px;
+    padding: 10px;
+    color: #fff;
+    background: black;
+    border: 6px groove #545565;
+}
+
+.course_image_bar img {
+	height: 100px;
+	width: 100px;
+	border: 5px groove #545565;
+}
+
+.image_hori_bar {
+	position: absolute;
+	top: 66%;
+	width: 100%;
+	height: 25%;
+}
+
+.image_hori_bar img {
+	height: 175px;
+	width: 175px;
+	border: 5px groove #545565;
+}
+
+.image_vert_bar {
+	width: 25%;
+	height: 65%;
+}
+
+.image_vert_bar img {
+	align: center;
+	height: 120px;
+	width: 200px;
+	border: 6px groove #545565;
+}
+
+#home:target ~ #header #navigation #link-home,
+#about_me:target ~ #header #navigation #link-about_me,
+#education:target ~ #header #navigation #link-education,
+#programs:target ~ #header #navigation #link-programs,
+#biz:target ~ #header #navigation #link-biz
+{
+    background: #000;
+    color: #fff;
+}
+
+<!-- CSS FOR CAPTIONS -->
+html { background-color: #eaeaea; }  
+#mainwrapper {  
+  font: 10pt normal Arial, sans-serif; 
+  text-align: center;  
+}
+
+#mainwrapper .box {  
+    border: solid black;  
+    cursor: pointer;  
+    height: 185px;  
+    position: relative; 
+    overflow: hidden;  
+    width: 185px;  
+    -webkit-box-shadow: 1px 1px 1px 1px #ccc;  
+    -moz-box-shadow: 1px 1px 1px 1px #ccc; 
+}  
+  
+#mainwrapper .box img {  
+    position: absolute;  
+    left: 0;  
+    -webkit-transition: all 100ms ease-out;  
+    -moz-transition: all 100ms ease-out;  
+    -o-transition: all 100ms ease-out;  
+    -ms-transition: all 100ms ease-out;  
+    transition: all 100ms ease-out;  
+}
+
+#mainwrapper .box p { 
+	padding: 5px;
+	margin: 0px 0px 0px 0px;
+	opacity: 0.8;
+}
+
+#mainwrapper .box .caption {  
+    background-color: rgba(0,0,0,0);  
+    position: absolute;  
+    z-index: 100;  
+    -webkit-transition: all 100ms ease-out;  
+    -moz-transition: all 100ms ease-out;  
+    -o-transition: all 100ms ease-out;  
+    -ms-transition: all 100ms ease-out;  
+    transition: all 100ms ease-out;  
+    left: 0;  
+}
+
+#mainwrapper .box .simple-caption {  
+    height: 30px;  
+    width: 100%;  
+    display: block;  
+    bottom: -30px;  
+    line-height: 25pt;  
+    text-align: center;  
+}
+
+#mainwrapper .box:hover .simple-caption {  
+    -moz-transform: translateY(-100%);  
+    -o-transform: translateY(-100%);  
+    -webkit-transform: translateY(-100%);  
+    transform: translateY(-100%);  
+} 
+
+#mainwrapper .box .scale-caption h3, #mainwrapper .box .scale-caption p {  
+    position: relative;  
+    left: -210px;  
+    width: 170px;  
+    -webkit-transition: all 500ms ease-out;  
+    -moz-transition: all 500ms ease-out;  
+    -o-transition: all 500ms ease-out;  
+    -ms-transition: all 500ms ease-out;  
+    transition: all 500ms ease-out;  
+}  
+  
+#mainwrapper .box .scale-caption h3 {  
+    -webkit-transition-delay: 300ms;  
+    -moz-transition-delay: 300ms;  
+    -o-transition-delay: 300ms;  
+    -ms-transition-delay: 300ms;  
+    transition-delay: 300ms;  
+}  
+  
+#mainwrapper .box .scale-caption p {
+	width: 95%;
+    -webkit-transition-delay: 500ms;  
+    -moz-transition-delay: 500ms;  
+    -o-transition-delay: 500ms;  
+    -ms-transition-delay: 500ms;  
+    transition-delay: 500ms;  
+}
+
+#mainwrapper .box:hover #scale_image {  
+   -moz-transform: scale(1.1);  
+   -o-transform: scale(1.1);  
+   -webkit-transform: scale(1.1);  
+   transform: scale(1.1); 
+}
+
+#mainwrapper .box:hover .scale-caption h3,  
+#mainwrapper .box:hover .scale-caption p {  
+    -moz-transform: translateX(210px);  
+    -o-transform: translateX(210px);  
+    -webkit-transform: translateX(210px);  
+    transform: translateX(210px);  
+}
+
+#mainwrapper #rotater.box .rotate-caption {  
+    width: 170px;  
+    height: 170px;  
+    text-align: left;  
+    padding: 20px;  
+    top: 210px;  
+    -moz-transform: rotate(-180deg);  
+    -o-transform: rotate(-180deg);  
+    -webkit-transform: rotate(-180deg);  
+    transform: rotate(-180deg);  
+}  
+  
+#mainwrapper .box .rotate {  
+    width: 200px;  
+    height: 400px;  
+    -webkit-transition: all 300ms ease-out;  
+    -moz-transition: all 300ms ease-out;  
+    -o-transition: all 300ms ease-out;  
+    -ms-transition: all 300ms ease-out;  
+    transition: all 300ms ease-out;  
+}
+
+/** Rotate Caption :hover Behaviour **/
+#mainwrapper .box:hover .rotate {  
+    background-color: rgba(0,0,0,1) !important;  
+    -moz-transform: rotate(-180deg);  
+    -o-transform: rotate(-180deg);  
+    -webkit-transform: rotate(-180deg);  
+    transform: rotate(-180deg);  
+} 
